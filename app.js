@@ -41,7 +41,8 @@ function aparienciaMensaje(){
 }
 
 function mostrarMensaje(operacion){
-    let texto = document.getElementById("text-area").value;
+    let texto = (String)(document.getElementById("text-area").value);
+    texto=texto.toLowerCase();
     if(validarTexto(texto)){
         aparienciaMensaje();
         let mensaje = "";
@@ -63,8 +64,8 @@ function copiarMensaje(){
     navigator.clipboard.writeText(texto);
 }
 function validarTexto(texto){
-    patron =/[abcdefghijklmnñopqrstuvwxyz ]/;
-    return patron.test(texto);
+    patron =/[ABCDEFGHIJKLMNÑOPQRSTUVWXYZáàäâãåąæāªèéëėêęēìïíīîįôöòóºōœøõüúūùû]/;
+    return !patron.test(texto);
 }
 function errorTexto(){
     document.getElementById("no-encontrado").style.display="block";
