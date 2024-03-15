@@ -64,7 +64,7 @@ function copiarMensaje(){
     navigator.clipboard.writeText(texto);
 }
 function validarTexto(texto){
-    patron =/[ABCDEFGHIJKLMNÑOPQRSTUVWXYZáàäâãåąæāªèéëėêęēìïíīîįôöòóºōœøõüúūùû]/;
+    patron =/[áàäâãåąæāªèéëėêęēìïíīîįôöòóºōœøõüúūùû]/;
     return !patron.test(texto);
 }
 function errorTexto(){
