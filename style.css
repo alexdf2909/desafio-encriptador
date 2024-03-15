@@ -37,6 +37,7 @@ textarea{
 }
 .text-area:focus, .mensaje:focus{
     outline: none;
+    text-transform: lowercase;
 }
 .informacion{
     display: flex;

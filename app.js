@@ -42,7 +42,6 @@ function aparienciaMensaje(){
 
 function mostrarMensaje(operacion){
     let texto = document.getElementById("text-area").value;
-    texto.ToLowerCase();
     if(validarTexto(texto)){
         aparienciaMensaje();
         let mensaje = "";
