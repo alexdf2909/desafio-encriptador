@@ -63,7 +63,7 @@ function copiarMensaje(){
     navigator.clipboard.writeText(texto);
 }
 function validarTexto(texto){
-    patron =/[áéíóúñÑ]/;
+    patron =/[áéíóú]/;
     return !patron.test(texto);
 }
 function errorTexto(){

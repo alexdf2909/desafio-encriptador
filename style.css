@@ -24,6 +24,7 @@ header{
     color: #0A3871;
     font-size: 32px;
     line-height: 48px;
+    text-transform: lowercase;
 }
 ::placeholder{
     color: #0A3871;
@@ -36,7 +37,6 @@ textarea{
 }
 .text-area:focus, .mensaje:focus{
     outline: none;
-    text-transform: lowercase;
 }
 .informacion{
     display: flex;
